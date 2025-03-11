@@ -8,7 +8,7 @@ print(fruits.rstrip() + " are delicious./n")
 
 print(fruits + " are delicious./n")
 
-print(fruits.lstrip() + "are delicious./n")
+print(fruits.lstrip() + " are delicious./n")
 
 print(fruits + " are delicious./n")
 
