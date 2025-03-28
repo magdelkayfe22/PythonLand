@@ -41,16 +41,16 @@ for contact in contacts:
     print(f"{contact_id}) {contact['full_name']:<15s}{contact['phone']:<15s}")
 
     contact_id = contact_id + 1
-    print()
+print()
 
 
     #updating the content section
-    contact_index_to_update = int(input("Which contact do you want to update? "))
+contact_index_to_update = int(input("Which contact do you want to update? "))
 
     # Since the index is off by one from the natural count we are going to add - 1.
-    contact_index_to_update = contact_index_to_update -1
+contact_index_to_update = contact_index_to_update -1
 
-    print(f"\nUpdating contact: {contacts[contact_index_to_update]['full_name']} \n")
+print(f"\nUpdating contact: {contacts[contact_index_to_update]['full_name']} \n")
 
 contacts[contact_index_to_update]['full_name'] = input(f"Enter new full name: ")
 contacts[contact_index_to_update]['phone'] = input("Enter new phone number: ")
@@ -62,19 +62,19 @@ for contact in contacts:
     print(f"{contact_id}) {contact['full_name']:<15s}{contact['phone']:<15s}")
 
     contact_id = contact_id + 1
-    print()
+print()
 
-    contact_index_to_delete = int(input("Which contact do you want to delete? "))
-    contact_index_to_delete = contact_index_to_delete -1
-    print()
+contact_index_to_delete = int(input("Which contact do you want to delete? "))
+contact_index_to_delete = contact_index_to_delete -1
+print()
 
     #Removing the contact from list
-    del contacts[contact_index_to_delete]
+del contacts[contact_index_to_delete]
 
     #Output3
-    print("Contact Directory: ")
-    contact_id = 1
-    for contact in contacts:
-        print(f"{contact_id}) {contact['full_name']:<15s}{contact['phone']:<15s}")
+print("Contact Directory: ")
+contact_id = 1
+for contact in contacts:
+    print(f"{contact_id}) {contact['full_name']:<15s}{contact['phone']:<15s}")
 
-        contact_id = contact_id + 1
+    contact_id = contact_id + 1
